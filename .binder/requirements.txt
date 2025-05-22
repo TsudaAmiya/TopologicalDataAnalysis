@@ -1,0 +1,2 @@
+matplotlib
+gudhi>=3.9.0
