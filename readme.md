@@ -25,3 +25,5 @@ notebook使用時は、ご自身のグローバル環境を汚さないために
   - simplexについて: `https://gudhi.inria.fr/python/latest/simplex_tree_ref.html`
 - 池 祐一, E.G. ESCOLAR, 大林 一平, 鍛冶 静雄, 位相的データ解析から構造発見へ, サイエンス社, 2023
 - N. Scoville, 中川 征樹(訳), 離散モース理論, 丸善出版, 2024
+- 玉木 大先生(2025/05/29時点で信州大学 理学部 数学科 数理科学コース 学部長)のホームページ: `http://pantodon.jp/index.rb?body=index`
+  - Vietoris-Rips複体: `http://pantodon.jp/index.rb?body=Rips_complex`
