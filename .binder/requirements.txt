@@ -1,4 +1,5 @@
-matplotlib
-gudhi>=3.9.0
-biopython
-matplotlib
+numpy==1.26.4
+biopython==1.85
+matplotlib==3.10.3
+scipy==1.15.3
+gudhi==3.11.0
