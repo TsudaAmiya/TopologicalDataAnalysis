@@ -21,9 +21,12 @@ notebook使用時は、ご自身のグローバル環境を汚さないために
 - Jupyter Notebookを起動する際も、仮想環境を有効化した状態で `jupyter notebook` を実行すると安心です。
 
 # 参考文献
-- `https://gudhi.inria.fr/index.html`
-  - simplexについて: `https://gudhi.inria.fr/python/latest/simplex_tree_ref.html`
+- PythonのライブラリGudhi`https://gudhi.inria.fr/index.html`
+- PYthonのライブラリBiopython: `https://biopython.org/`
 - 池 祐一, E.G. ESCOLAR, 大林 一平, 鍛冶 静雄, 位相的データ解析から構造発見へ, サイエンス社, 2023
 - N. Scoville, 中川 征樹(訳), 離散モース理論, 丸善出版, 2024
-- 玉木 大先生(2025/05/29時点で信州大学 理学部 数学科 数理科学コース 学部長)のホームページ: `http://pantodon.jp/index.rb?body=index`
+- WebサイトAlgebraic Topology: `http://pantodon.jp/index.rb?body=index`
   - Vietoris-Rips複体: `http://pantodon.jp/index.rb?body=Rips_complex`
+- 斎藤 成也, ゲノム進化を考える, サイエンス社, 2007
+  - 正誤表: `http://www.saitou-naruya-laboratory.org/My_books/Saiensusha_0007.html`
+- 平岡 裕章, タンパク質構造とトポロジー, 共立出版, 2013
