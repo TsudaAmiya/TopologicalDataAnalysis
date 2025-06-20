@@ -5,7 +5,7 @@
 `pip install uv`でuvをインストールしておいてください
 
 1. `cd <このカレントディレクトリ>` を実行し、`TopologicalDataAnalysis/`まで移動
-2. `uv venv .venv` を実行(仮想環境を作成)
+2. `uv venv .venv --python 3.12` を実行(仮想環境を作成)
 3. `.venv\Scripts\activate` を実行(仮想環境を有効化)
 4. `uv pip install -r pyproject.toml` を実行
 5. `uv pip install --upgrade --force-reinstall ipykernel`
