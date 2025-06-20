@@ -1,22 +1,24 @@
 # 1. notebook実行前に以下を行ってください
 
-ご自身の環境にPython3.12以上をインストールしてください。
+ご自身の環境にPython3.11以上をインストールしてください。
 以下をコマンドプロンプト（またはPowerShell）で実行してください。
+`pip install uv`でuvをインストールしておいてください
 
 1. `cd <このカレントディレクトリ>` を実行し、`TopologicalDataAnalysis/`まで移動
-2. `python -m venv venv` を実行
-3. `./venv/Scripts/activate` を実行
-4. `pip install -r .binder/requirements.txt` を実行
+2. `uv venv .venv` を実行(仮想環境を作成)
+3. `.venv\Scripts\activate` を実行(仮想環境を有効化)
+4. `uv pip install -r pyproject.toml` を実行
+5. `uv pip install --upgrade --force-reinstall ipykernel`
+
+開発者向け。上の操作の前に以下を行う。
+1. pyproject.toml を編集
+2. `uv lock` で pyproject.toml から uv.lock を作成
 
 notebook使用時は、ご自身のグローバル環境を汚さないためにこのvenv環境を用いてください。
 
 # 2. 1の操作の解説
 
-2. TopologicalDataAnalysisフォルダ内に独立したPython実行環境（仮想環境）を作成しています。実行後、TopologicalDataAnalysis/venvの中に TopologicalDataAnalysis/venv/Scripts/python.exe などが生成されます。
-3. 以降の pip install や python コマンドは「venv」フォルダ内のPython環境で動作します。
-4. TopologicalDataAnalysis/.binder/requirements.txt に書いてあるライブラリを仮想環境にインストールします。
-
-- `python -m venv venv` で使われるPythonのバージョンは、コマンド実行時に呼び出されるPythonです。複数バージョンがある場合は `py -3.12 -m venv venv` のようにバージョン指定も可能です。ただし、ご自身の環境に指定したバージョンのpythonが存在している必要があるため事前にダウンロードしてください。
+- TopologicalDataAnalysisフォルダ内に独立したPython実行環境（仮想環境）を作成しています。実行後、TopologicalDataAnalysis/venvの中に TopologicalDataAnalysis/.venv/Scripts/python.exe などが生成されます。
 - 仮想環境を有効化しないまま `pip install ...` するとグローバル環境にインストールされてしまうので注意してください。
 - Jupyter Notebookを起動する際も、仮想環境を有効化した状態で `jupyter notebook` を実行すると安心です。
 
